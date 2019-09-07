@@ -1,0 +1,203 @@
+body {
+    margin: 0px;
+    background-color: #ab88ff;
+    font-family: 'Muli', sans-serif;
+}
+.header {
+    background-color: #21c0bb;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.login {
+    background: linear-gradient( #21c0bb, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label {
+    font-size: 14px;
+}
+.login__container--remenber{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remenber a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.login__container--remenber a:hover {
+    text-decoration: underline;
+}
+.login__container--social > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social > div > img {
+    width: 50px;
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 14px;
+}
+.login_container--register a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+.container--social > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.container--register {
+    display: flex;
+    justify-content: center;
+}
+.container--register a {
+    color: white;
+    text-decoration: none;
+}
+
+.container--register a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: white;
+}
+.button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+
+}
+
+.error{
+    background: linear-gradient( #21c0bb, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.error h2 {
+    color: white;
+    font-size: 80px;
+    margin: 0px;
+}
+.error p {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.error a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.error a:hover {
+    text-decoration: underline;
+}
+.footer{
+    background: #ab88ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .login__container--social{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .login_container--register{
+        justify-content: center;
+        display: flex;
+    }
+}
